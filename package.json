@@ -14,6 +14,6 @@
     "@modelcontextprotocol/sdk": "^1.29.0",
     "axios": "^1.17.0",
     "dotenv": "^17.4.2",
-    "muapi-js": "file:../../sdk2/muapi-js"
+    "muapi-js": "^1.0.0"
   }
 }
