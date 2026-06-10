@@ -1,40 +1,80 @@
-# MuAPI Claude Code MCP Server
+# MuAPI – Claude Code Plugin
 
-MCP server for integrating MuAPI with Claude Code and other MCP-compatible clients.
+A Claude Code plugin that gives Claude the power to generate images, create videos, edit visuals, and more — all powered by [MuAPI](https://muapi.com).
 
-## Features
+Simply install the plugin and start asking Claude to generate media for you.
 
-* Account Balance
-* Image Generation
-* Video Generation
-* Image Editing
-* Image-to-Video
-* File Uploads
-* Model Discovery
-* Prediction Tracking
+## ✨ What It Can Do
 
-## Installation
+| Tool | Description |
+|------|-------------|
+| `generate_image` | Generate images from text prompts |
+| `generate_video` | Generate videos from text prompts |
+| `edit_image` | Edit an existing image with instructions |
+| `image_to_video` | Convert a still image into a video |
+| `upload_file` | Upload files to MuAPI for processing |
+| `list_models` | Browse available model categories |
+| `model_details` | Get details about a specific model |
+| `get_prediction` | Track the status of an async prediction |
+| `account_balance` | Check your MuAPI account balance |
 
-Clone the repository:
+## 🚀 Installation
+
+### Install as a Claude Code Plugin
 
 ```bash
-git clone <repository-url>
-cd muapi-claude-code
+claude plugin add muapi
 ```
 
-Install dependencies:
+Or install directly from GitHub:
 
 ```bash
+claude plugin add https://github.com/SamurAIGPT/muapi-claude-code.git
+```
+
+### Configure Your API Key
+
+Set your MuAPI API key:
+
+```bash
+claude config set plugins.muapi.env.MUAPI_API_KEY your_api_key_here
+```
+
+Get your API key from [muapi.com](https://muapi.com).
+
+## 💡 Usage
+
+Once installed, just ask Claude naturally:
+
+**Image Generation**
+```
+Generate an image of a futuristic city at sunset
+```
+
+**Video Generation**
+```
+Generate a cinematic drone shot over mountains
+```
+
+**Image Editing**
+```
+Edit this image to add a rainbow in the sky
+```
+
+**Image to Video**
+```
+Convert this image into a slow zoom-in video
+```
+
+## 🛠 Development
+
+If you want to run the plugin locally for development:
+
+```bash
+git clone https://github.com/SamurAIGPT/muapi-claude-code.git
+cd muapi-claude-code
 npm install
 ```
-
-The server uses the published MuAPI JavaScript SDK:
-
-```bash
-npm install muapi-js
-```
-
-## Configuration
 
 Create a `.env` file:
 
@@ -42,42 +82,35 @@ Create a `.env` file:
 MUAPI_API_KEY=your_api_key_here
 ```
 
-## Run
+Run the MCP server directly:
 
 ```bash
 node src/index.js
 ```
 
-## Available Tools
+## 📁 Project Structure
 
-* account_balance
-* generate_image
-* generate_video
-* edit_image
-* image_to_video
-* upload_file
-* list_models
-* model_details
-* get_prediction
-
-## Example
-
-Generate an image:
-
-```text
-Generate an image of a futuristic city at sunset
+```
+muapi-mcp-server/
+├── .claude-plugin/
+│   └── plugin.json            # Claude Code plugin manifest
+├── src/
+│   ├── index.js               # MCP server entry point
+│   └── tools/
+│       ├── generateImage.js   # Image generation
+│       ├── generateVideo.js   # Video generation
+│       ├── editImage.js       # Image editing
+│       ├── imageToVideo.js    # Image-to-video conversion
+│       ├── uploadFile.js      # File upload
+│       ├── listModels.js      # Model listing
+│       ├── modelDetails.js    # Model details
+│       ├── getPrediction.js   # Prediction tracking
+│       └── accountBalance.js  # Account balance
+├── .mcp.json                  # MCP server config
+├── package.json
+└── .env                       # API key (not committed)
 ```
 
-Generate a video:
+## 📄 License
 
-```text
-Generate a cinematic drone shot over mountains
-```
-
-## SDK
-
-Powered by the published MuAPI JavaScript SDK:
-
-```bash
-npm install muapi-js
-```
+ISC
