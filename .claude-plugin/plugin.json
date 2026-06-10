@@ -1,0 +1,8 @@
+{
+    "name": "muapi",
+    "description": "Generate images, videos, and media using MuAPI inside Claude Code",
+    "version": "1.0.0",
+    "author": {
+        "name": "MuAPI"
+    }
+}
