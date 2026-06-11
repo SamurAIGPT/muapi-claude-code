@@ -4,5 +4,8 @@
     "version": "1.0.0",
     "author": {
         "name": "MuAPI"
-    }
+    },
+    "homepage": "https://muapi.com",
+    "repository": "https://github.com/SamurAIGPT/muapi-claude-code",
+    "license": "ISC"
 }

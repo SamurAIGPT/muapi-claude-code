@@ -66,6 +66,18 @@ Edit this image to add a rainbow in the sky
 Convert this image into a slow zoom-in video
 ```
 
+## 🔧 Slash Commands
+
+After installing, you can invoke skills directly:
+
+| Command | What it does |
+|---------|-------------|
+| `/muapi:generate-image <prompt>` | Generate an image from a text prompt |
+| `/muapi:generate-video <prompt>` | Generate a video from a text prompt |
+| `/muapi:edit-image <instructions>` | Edit an existing image |
+| `/muapi:image-to-video <image url>` | Animate a still image into a video |
+| `/muapi:media-help` | Explore available models and get recommendations |
+
 ## 🛠 Development
 
 If you want to run the plugin locally for development:
@@ -91,7 +103,7 @@ node src/index.js
 ## 📁 Project Structure
 
 ```
-muapi-mcp-server/
+muapi-claude-code/
 ├── .claude-plugin/
 │   └── plugin.json            # Claude Code plugin manifest
 ├── src/
