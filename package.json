@@ -1,7 +1,8 @@
 {
   "name": "muapi-mcp-server",
-  "version": "1.0.0",
-  "mcpName": "io.github.SamurAIGPT/muapi",
+  "version": "1.0.1",
+  "mcpName": "io.github.Anil-matcha/muapi",
+  "version": "1.0.1",
   "type": "module",
   "description": "MCP server for muapi.ai — generate images, videos, and media using 100+ AI models inside Claude Code and other MCP clients",
   "main": "src/index.js",
