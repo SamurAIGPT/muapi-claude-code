@@ -1,8 +1,13 @@
 # MuAPI – Claude Code Plugin
 
-A Claude Code plugin that gives Claude the power to generate images, create videos, edit visuals, and more — all powered by [MuAPI](https://muapi.com).
+A Claude Code plugin that gives Claude the power to generate images, create videos, edit visuals, and more — all powered by [MuAPI](https://muapi.ai).
 
 Simply install the plugin and start asking Claude to generate media for you.
+
+## Related Projects
+
+- [MuAPI](https://muapi.ai) — Unified API for image, video, and audio generation across hundreds of AI models. Install [agent skills](https://muapi.ai/docs/agent-skills), connect through [MCP](https://muapi.ai/docs/mcp), or create [access keys](https://muapi.ai/access-keys).
+- [muapi-cli](https://github.com/SamurAIGPT/muapi-cli) — Run the same generation workflows from a terminal or MCP client.
 
 ## ✨ What It Can Do
 
@@ -40,7 +45,7 @@ Set your MuAPI API key:
 claude config set plugins.muapi.env.MUAPI_API_KEY your_api_key_here
 ```
 
-Get your API key from [muapi.com](https://muapi.com).
+Get your API key from [muapi.ai](https://muapi.ai/access-keys).
 
 ## 💡 Usage
 
